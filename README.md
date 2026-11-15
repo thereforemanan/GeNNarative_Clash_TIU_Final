@@ -2,6 +2,11 @@
 
 **An AI content workspace for local businesses and regional creators in India.**
 
+## Team — 2'S Complement
+
+- [Manan Mitra](https://github.com/thereforemanan)
+- [Gopa Paul](https://github.com/gopaa17)
+
 > **50% MVP submission:** This README is the full written project explanation for the prototype. The public repository and demo-video URLs are listed below; replace their placeholders before submitting.
 
 Bhasha Bloom helps a creator turn a business idea into social copy they can review and use: two hooks, two longer stories, two offer-and-call-to-action variations, a caption, and hashtags, written in Indian English for a selected platform. The current submission is the team's functional MVP prototype; it demonstrates the core content-generation and draft-saving flow while clearly marking other areas as upcoming.
