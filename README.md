@@ -217,8 +217,8 @@ Protected API routes require a signed-in session. Draft operations are scoped to
 
 Add the final public URLs here before submitting:
 
-- **Public GitHub repository:** TODO — add the repository URL after publishing it.
-- **Public 50% MVP demo video:** TODO — add a viewable video URL after recording and publishing the demo.
+- **Public GitHub repository:** TODO — https://github.com/thereforemanan/GeNNarative_Clash_TIU_Final
+- **Public 50% MVP demo video:** TODO — https://drive.google.com/file/d/12e-Q_JWWXXoXduk081elL6cuhnBNt8-7/view?usp=sharing
 
 Replace both placeholders with the final public URLs before submitting. Make sure the demo video link opens without requiring the committee to request access.
 
