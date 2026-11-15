@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-size:18px;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface-variant":"#605850","primary-fixed":"#fbe8d8","on-secondary":"#ffffff","surface":"#faf5ee","on-secondary-fixed":"#2a2420","surface-tint":"#c2652a","primary-container":"#e08850","on-error":"#ffffff","secondary-container":"#eae2da","error-container":"#fce4e0","surface-container-high":"#ece6dc","on-primary":"#ffffff","on-background":"#3a302a","on-primary-container":"#fbe8d8","primary-fixed-dim":"#f0a878","on-surface":"#3a302a","on-tertiary-container":"#3a2020","tertiary-fixed-dim":"#e8a0a0","on-tertiary":"#ffffff","secondary":"#78706a","outline-variant":"#d8d0c8","surface-bright":"#faf5ee","on-secondary-fixed-variant":"#504840","on-secondary-container":"#605850","surface-container":"#f2ece4","surface-container-highest":"#e6e0d6","inverse-surface":"#3a302a","surface-container-low":"#f6f0e8","secondary-fixed":"#eae2da","surface-container-lowest":"#ffffff","tertiary-container":"#d47070","outline":"#9a9088","secondary-fixed-dim":"#cec6be","tertiary":"#8c3c3c","inverse-primary":"#f0a878","on-tertiary-fixed":"#2e1515","tertiary-fixed":"#fce0e0","background":"#faf5ee","on-tertiary-fixed-variant":"#6e3030","primary":"#c2652a","surface-variant":"#ece6dc","surface-dim":"#dcd6cc","on-error-container":"#7a1a10","on-primary-fixed-variant":"#8a4518","inverse-on-surface":"#faf5ee","error":"#c0392b","on-primary-fixed":"#401a08"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{},fontFamily:{headline:["EB Garamond"],display:["EB Garamond"],body:["Manrope"],label:["Manrope"]},fontSize:{
+  "xs":["0.875rem",{"lineHeight":"1rem"}],
+  "sm":["1rem",{"lineHeight":"1.25rem"}],
+  "base":["1.125rem",{"lineHeight":"1.5rem"}],
+  "lg":["1.25rem",{"lineHeight":"1.75rem"}],
+  "xl":["1.375rem",{"lineHeight":"1.75rem"}],
+  "2xl":["1.625rem",{"lineHeight":"2rem"}],
+  "3xl":["2rem",{"lineHeight":"2.25rem"}],
+  "4xl":["2.375rem",{"lineHeight":"2.5rem"}],
+  "5xl":["3.125rem",{"lineHeight":"1"}],
+  "6xl":["3.875rem",{"lineHeight":"1"}],
+  "7xl":["4.625rem",{"lineHeight":"1"}],
+  "8xl":["6.125rem",{"lineHeight":"1"}],
+  "9xl":["8.125rem",{"lineHeight":"1"}]
+}}}}</script></head><body class="bg-surface font-body text-on-surface min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_2px_16px_rgba(58,48,42,0.04)]"><div class="flex flex-col p-5"><div class="flex items-center gap-3 pb-4"><div aria-label="Bhasha Bloom logo" class="h-12 w-12 shrink-0 rounded-2xl bg-primary flex items-center justify-center shadow-md ring-1 ring-primary/10">
+  <span class="material-symbols-outlined text-on-primary" style="font-size:28px;font-variation-settings:'FILL' 1">local_florist</span>
+</div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="text-[21px] font-headline font-bold tracking-tight text-on-surface leading-none">Bhasha Bloom</span></div><span class="text-[13px] text-on-surface-variant font-label tracking-wide">Regional Creators Suite</span></div></div><div class="mb-5"><div class="flex items-center justify-between w-full px-3 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-left cursor-pointer hover:bg-surface-container-low transition-colors shadow-xs"><div class="flex items-center gap-2.5 min-w-0 overflow-hidden"><span class="material-symbols-outlined rounded-lg bg-primary-fixed p-2 text-primary" style="font-size:16px">storefront</span><span data-workspace-name class="text-sm font-label font-bold text-on-surface truncate" title="Your business">Your business</span></div><span class="material-symbols-outlined text-sm text-on-surface-variant" style="font-size:14px">unfold_more</span></div></div><div class="mb-4"><a class="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-primary text-on-primary text-xs font-label font-semibold shadow-[0_2px_16px_rgba(58,48,42,0.04)] hover:bg-primary-container hover:text-on-primary-container transition-all" data-path="quick-create" href="/studio" target="_top"><span class="material-symbols-outlined text-base" style="font-size:16px">bolt</span><span class="">⚡ Quick Create</span></a></div><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-xs font-label text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="/dashboard" target="_top"><span class="material-symbols-outlined text-base text-primary" style="font-size:16px">bar_chart</span><span class="">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-xs font-label text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="create" href="/studio" target="_top"><span class="material-symbols-outlined text-base" style="font-size:16px">bolt</span><span class="">Create</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-xs font-label bg-surface-container-high text-on-surface font-semibold transition-all" data-path="drafts" href="/drafts" target="_top"><span class="material-symbols-outlined text-base" style="font-size:16px">edit_note</span><span class="">Drafts</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-xs font-label text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="brand-profile" href="/dashboard" target="_top"><span class="material-symbols-outlined text-base" style="font-size:16px">loyalty</span><span class="">Brand Profile</span></a></nav></div><div class="p-5 space-y-4"><div class="flex items-center justify-between px-2 py-1 bg-surface-container rounded-lg text-xs font-label text-on-surface-variant"><span class="text-[13px] font-medium text-on-surface-variant">Language</span><div class="flex items-center gap-1 text-[13px] font-semibold"><button class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface shadow-xs">EN</button><button class="px-1.5 py-0.5 rounded hover:text-on-surface">हि</button><button class="px-1.5 py-0.5 rounded hover:text-on-surface">বা</button></div></div><div class="flex items-center justify-between pt-2 border-t-0"><div class="flex items-center gap-3 min-w-0 flex-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj1KXK1aoRHzgRXwSdKDRr9V0wi2c5p5vRhxwGd0kSVVygRwSdUHbP9Dyu8P9kJDP4fORBppHCoUd0kXawjmPxuiMihpjsAFlK2XqxfXGHwXKIkZod7FljH7MQzAEOI2SCwZoBWgHDxPDhu-dEwdDM-zcp6Jjt6ek9GID_64M23cct3__8oO26I8iJlsJ8iQLLyfar6t9x92v7OsYOZ1ayBiJ7Hw7uSv6iMWqEpXM1"/><div class="flex flex-col min-w-0"><span class="text-xs font-label font-semibold text-on-surface truncate">Pooja Sharma</span><span class="text-[13px] text-on-surface-variant font-label truncate">Founder &amp; Creator</span></div></div><a class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" href="#" title="Settings &amp; Preferences"><span class="material-symbols-outlined text-base" style="font-size:16px">settings</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_2px_16px_rgba(58,48,42,0.04)] z-40 flex items-center justify-between px-8"><div class="relative w-96"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-sm text-outline" style="font-size:14px">search</span><input id="draftSearch" class="w-full bg-surface-container-lowest text-xs text-on-surface placeholder:text-outline rounded-lg pl-9 pr-14 py-2 outline-none focus:ring-1 focus:ring-primary shadow-xs font-label" placeholder="Search drafts, hooks, reels scripts, tags..." type="text"/><kbd class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[12px] font-mono text-outline bg-surface-container px-1.5 py-0.5 rounded">⌘K</kbd></div><div class="flex items-center gap-4"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" id="create-notifications-button" aria-expanded="false"><span class="material-symbols-outlined text-xl" style="font-size:20px">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-tertiary"></span></button><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary text-on-primary text-xs font-label font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all shadow-[0_2px_16px_rgba(58,48,42,0.04)]"><span class="material-symbols-outlined text-sm" style="font-size:14px">add</span><span class="">+ New Campaign</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj1KXK1aoRHzgRXwSdKDRr9V0wi2c5p5vRhxwGd0kSVVygRwSdUHbP9Dyu8P9kJDP4fORBppHCoUd0kXawjmPxuiMihpjsAFlK2XqxfXGHwXKIkZod7FljH7MQzAEOI2SCwZoBWgHDxPDhu-dEwdDM-zcp6Jjt6ek9GID_64M23cct3__8oO26I8iJlsJ8iQLLyfar6t9x92v7OsYOZ1ayBiJ7Hw7uSv6iMWqEpXM1"/></div></header><main class="relative pt-16 w-full min-h-screen px-8 py-8 bg-surface"><div class="flex flex-col w-full space-y-7">
+<!-- Top View Heading & Stat Summary -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5">
+<div class="space-y-1.5">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[12px] font-label font-bold bg-primary-fixed text-on-primary-fixed uppercase tracking-wider">LOCAL WORKSPACE STORAGE</span>
+<span class="text-xs text-on-surface-variant font-label flex items-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Saved in this workspace
+        </span>
+</div>
+<h1 class="text-3xl lg:text-4xl font-headline font-semibold text-on-surface tracking-tight">
+        Drafts Library
+</h1>
+<p class="text-xs md:text-sm text-on-surface-variant font-body max-w-2xl leading-relaxed">
+        Your saved hooks, captions, and campaign copy, all in one place.
+      </p>
+</div>
+<!-- Quick Batch Actions & View Switcher -->
+<div class="flex items-center flex-wrap gap-2.5">
+<div class="flex items-center bg-surface-container rounded-lg p-1 text-xs font-label">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-lowest text-on-surface font-semibold shadow-sm transition-all" id="viewGridBtn">
+<span class="material-symbols-outlined text-sm text-primary" style="font-size:14px">grid_view</span>
+<span>Grid</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface transition-all" id="viewListBtn">
+<span class="material-symbols-outlined text-sm" style="font-size:14px">table_rows</span>
+<span>List</span>
+</button>
+</div>
+<div class="relative">
+<select id="draftSort" class="appearance-none bg-surface-container hover:bg-surface-container-high transition-colors text-xs font-label text-on-surface font-semibold pl-3 pr-8 py-2 rounded-lg cursor-pointer outline-none">
+<option>Sort: Last Modified</option>
+<option>Sort: Creation Date</option>
+<option>Sort: Status Priority</option>
+<option>Sort: Platform Type</option>
+</select>
+<span class="material-symbols-outlined text-sm text-on-surface-variant pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2" style="font-size:14px">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Status Filter Pills & Quick Metrics Bar (3 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<button class="group p-4 rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high relative overflow-hidden flex flex-col justify-between" data-status-filter="all">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="text-[13px] font-label font-semibold uppercase tracking-wider text-on-surface-variant">All Artifacts</span>
+<span class="material-symbols-outlined text-base text-primary" style="font-size:16px">folder_open</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-headline font-bold text-on-surface" data-metric="total">0</span>
+<span class="text-[13px] font-label text-on-surface-variant">Drafts saved</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full mt-2.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 100%"></div>
+</div>
+</button>
+<button class="group p-4 rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high relative overflow-hidden flex flex-col justify-between" data-status-filter="draft">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="text-[13px] font-label font-semibold uppercase tracking-wider text-on-surface-variant">Saved Drafts</span>
+<span class="material-symbols-outlined text-base text-primary" style="font-size:16px">verified</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-headline font-bold text-on-surface" data-metric="draft">0</span>
+<span class="text-[13px] font-label text-on-surface-variant">Awaiting review</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full mt-2.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 32%"></div>
+</div>
+</button>
+<button class="group p-4 rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high relative overflow-hidden flex flex-col justify-between" data-status-filter="scheduled">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="text-[13px] font-label font-semibold uppercase tracking-wider text-on-surface-variant">Scheduled</span>
+<span class="material-symbols-outlined text-base text-primary-container" style="font-size:16px">draw</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-headline font-bold text-on-surface" data-metric="scheduled">0</span>
+<span class="text-[13px] font-label text-on-surface-variant">Queued in calendar</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full mt-2.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 48%"></div>
+</div>
+</button>
+</div>
+<!-- Refined Filter Matrix: Languages & Platforms -->
+<div class="p-4 rounded-xl bg-surface-container-low space-y-3.5 shadow-sm">
+<!-- Row 1: Languages Filter -->
+<div class="flex items-center gap-2 flex-wrap">
+<span class="text-[13px] font-label font-semibold text-on-surface-variant uppercase tracking-wider w-24 shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">language</span>
+        Language
+      </span>
+<div class="flex items-center gap-1.5 flex-wrap">
+<button class="px-2.5 py-1 rounded-md text-xs font-label font-semibold bg-surface-container-lowest text-primary shadow-xs" data-language-filter="all">
+          All Languages (14)
+        </button>
+<button class="px-2.5 py-1 rounded-md text-xs font-label text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-language-filter="hindi">
+          हिन्दी / Hinglish (7)
+        </button>
+<button class="px-2.5 py-1 rounded-md text-xs font-label text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-language-filter="bengali">
+          বাংলা Bengali (3)
+        </button>
+<button class="px-2.5 py-1 rounded-md text-xs font-label text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-language-filter="english">
+          English (3)
+        </button>
+
+</div>
+</div>
+<!-- Row 2: Platforms Filter -->
+<div class="flex items-center gap-2 flex-wrap pt-2">
+<span class="text-[13px] font-label font-semibold text-on-surface-variant uppercase tracking-wider w-24 shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">hub</span>
+        Channel
+      </span>
+<div class="flex items-center gap-1.5 flex-wrap">
+<button class="px-2.5 py-1 rounded-md text-xs font-label font-semibold bg-primary-fixed text-on-primary-fixed" data-platform-filter="all">
+          All Channels
+        </button>
+<button class="px-2.5 py-1 rounded-md text-xs font-label text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-1" data-platform-filter="Instagram Reels">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">video_library</span>
+          Instagram Reels
+        </button>
+<button class="px-2.5 py-1 rounded-md text-xs font-label text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-1" data-platform-filter="WhatsApp Broadcast">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">chat</span>
+          WhatsApp Broadcast
+        </button>
+<button class="px-2.5 py-1 rounded-md text-xs font-label text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-1" data-platform-filter="YouTube Shorts">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">smart_display</span>
+          YouTube Shorts
+        </button>
+
+</div>
+</div>
+</div>
+<!-- Draft Cards Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5" id="draftsGrid"><template id="draftCardTemplate"><div class="draft-card cursor-pointer group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-4 relative overflow-hidden" data-draft-id="" data-status="" data-language="" data-platform="">
+<div class="space-y-3">
+<!-- Badges & Status -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-primary-fixed text-on-primary-fixed flex items-center gap-1 draft-platform-label">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">video_camera_back</span>
+              Reel Script
+            </span>
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-surface-container-high text-on-surface draft-language-label">
+              हिन्दी + বাংলা
+            </span>
+</div>
+<span class="flex items-center gap-1 text-[13px] font-label font-semibold text-primary bg-primary-fixed/40 px-2 py-0.5 rounded-full draft-status-label">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Ready for Review
+          </span>
+</div>
+<!-- Title -->
+<h3 class="text-xl font-headline font-semibold text-on-surface leading-snug group-hover:text-primary transition-colors draft-title">
+          Navratri Special Handloom Saree Showcase
+        </h3>
+<!-- Regional Hook Block with Editorial Serif Accent -->
+<div class="p-3.5 rounded-xl bg-surface-container-low text-on-surface space-y-1.5">
+<span class="text-[12px] uppercase font-label tracking-widest text-on-surface-variant font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">format_quote</span>
+            Regional Opening Hook
+          </span>
+<p class="font-headline italic text-sm text-on-surface leading-relaxed draft-preview">
+            "इस नवरात्रि, अपनी परंपरा को पहनें ✨ Authentic handwoven Chanderi with pure Zari work crafted for Durga Puja pandals."
+          </p>
+</div>
+<!-- Visual Preview Thumbnail Strip -->
+<div class="draft-media relative h-28 w-full rounded-xl overflow-hidden bg-surface-container flex items-center justify-center">
+<div class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-2xl" style="font-size:24px">image</span>
+<span class="text-[12px] font-label">No photo attached</span>
+</div>
+</div>
+<!-- Meta info -->
+<div class="text-[13px] font-label text-on-surface-variant flex items-center justify-between pt-1">
+<span class="flex items-center gap-1 truncate draft-updated-label">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">database</span>
+            Saved in this workspace
+          </span>
+<span class="font-mono text-[12px] text-secondary draft-identifier">#NAV-2024</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-3 border-t-0 flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-1">
+<button class="flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg bg-primary text-on-primary text-xs font-label font-semibold hover:bg-primary-container transition-all flex-1 shadow-xs" data-action="edit">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">edit_note</span>
+            Edit in Studio
+          </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors text-xs font-label font-semibold" title="Schedule" data-action="schedule">
+<span class="material-symbols-outlined text-sm" style="font-size:14px">event_upcoming</span>
+</button>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Copy Content" aria-label="Copy draft content" data-action="copy">
+<span class="material-symbols-outlined text-base" style="font-size:16px">content_copy</span>
+</button>
+<button class="p-1.5 rounded-lg text-error hover:bg-error-container transition-colors" title="Delete Draft" aria-label="Delete draft" data-action="delete">
+<span class="material-symbols-outlined text-base" style="font-size:16px">delete</span>
+</button>
+</div>
+</div></template>
+<!-- Draft Card 1 -->
+<div id="draftsEmptyState" class="hidden col-span-full rounded-2xl bg-surface-container-lowest p-10 text-center shadow-sm">
+<h2 class="text-xl font-headline font-semibold text-on-surface">No saved drafts yet</h2>
+<p id="draftsEmptyMessage" class="mt-2 text-sm text-on-surface-variant">Generate content in the Studio and save a hook or caption to see it here.</p>
+<button id="emptyStateCreate" class="mt-5 rounded-lg bg-primary px-4 py-2 text-sm font-label font-semibold text-on-primary">Open AI Studio</button>
+</div>
+<!-- Draft Card 2 -->
+<div class="draft-card cursor-pointer group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-4 relative overflow-hidden" data-id="WAPP-042">
+<div class="space-y-3">
+<!-- Badges & Status -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-secondary-container text-on-secondary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">send</span>
+              WhatsApp Broadcast
+            </span>
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-surface-container-high text-on-surface">
+              Hinglish
+            </span>
+</div>
+<span class="flex items-center gap-1 text-[13px] font-label font-semibold text-primary bg-primary-fixed/40 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Ready for Review
+          </span>
+</div>
+<!-- Title -->
+<h3 class="text-xl font-headline font-semibold text-on-surface leading-snug group-hover:text-primary transition-colors">
+          Artisan Clay Diyas &amp; Festive Gift Hampers
+        </h3>
+<!-- Regional Hook Block -->
+<div class="p-3.5 rounded-xl bg-surface-container-low text-on-surface space-y-1.5">
+<span class="text-[12px] uppercase font-label tracking-widest text-on-surface-variant font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">chat_bubble</span>
+            Broadcast Message Header
+          </span>
+<p class="font-body text-xs text-on-surface leading-relaxed">
+            "Diwali ki tayyari shuru! Pure terracotta diyas hand-molded by Kumartuli potters, paired with handcrafted saffron chai blend."
+          </p>
+</div>
+<!-- Target Metric Pill -->
+<div class="p-3 rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" style="font-size:18px">groups</span>
+<div class="flex flex-col">
+<span class="text-xs font-label font-bold text-on-surface">VIP Mumbai Patrons</span>
+<span class="text-[12px] text-on-surface-variant">Opted-in WhatsApp broadcast</span>
+</div>
+</div>
+<span class="font-mono text-xs font-bold text-primary">1,420 users</span>
+</div>
+<!-- Meta info -->
+<div class="text-[13px] font-label text-on-surface-variant flex items-center justify-between pt-1">
+<span class="flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-xs text-secondary" style="font-size:12px">sync</span>
+            Updated 2h ago • Local Merged
+          </span>
+<span class="font-mono text-[12px] text-secondary">#WAPP-042</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-3 border-t-0 flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-1">
+<button class="flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg bg-primary text-on-primary text-xs font-label font-semibold hover:bg-primary-container transition-all flex-1 shadow-xs">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">edit_note</span>
+            Edit in Studio
+          </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors text-xs font-label font-semibold" title="Test Dispatch">
+<span class="material-symbols-outlined text-sm" style="font-size:14px">send_and_archive</span>
+</button>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Kebab Options">
+<span class="material-symbols-outlined text-base" style="font-size:16px">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Draft Card 3 -->
+<div class="draft-card cursor-pointer group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-4 relative overflow-hidden" data-id="DOCU-019">
+<div class="space-y-3">
+<!-- Badges & Status -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-primary-fixed text-on-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">smart_display</span>
+              YouTube Shorts
+            </span>
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-surface-container-high text-on-surface">
+              বাংলা + English
+            </span>
+</div>
+<span class="flex items-center gap-1 text-[13px] font-label font-semibold text-secondary bg-surface-container px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            In Progress
+          </span>
+</div>
+<!-- Title -->
+<h3 class="text-xl font-headline font-semibold text-on-surface leading-snug group-hover:text-primary transition-colors">
+          Behind the Loom: Master Weaver Biren-da's Story
+        </h3>
+<!-- Regional Bengali Hook -->
+<div class="p-3.5 rounded-xl bg-surface-container-low text-on-surface space-y-1.5">
+<span class="text-[12px] uppercase font-label tracking-widest text-on-surface-variant font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">record_voice_over</span>
+            Bengali Narrative Track
+          </span>
+<p class="font-headline italic text-sm text-on-surface leading-relaxed">
+            "তাঁতের প্রতিটি সুতোয় বোনা আমাদের ৫০ বছরের পারিবারিক ইতিহাস—শান্তিপুরী তাঁত আজ নতুন যুগে..."
+          </p>
+</div>
+<!-- Visual Media Preview with Audio Pill -->
+<div class="relative h-28 w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of an elderly Indian master weaver working at a wooden handloom weaving intricate golden fabric in a warm rustic sunlit workshop in rural Bengal, warm tones, authentic documentary photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuZ02qbnKwhq4Bcth6SAIQLxLtykIEJFK_fCTlTuv7vO2270C58FR1YmyRNEqz8JZES77m59kvCLRa7vTG99ouIcQj2heBrnHrIGAwYH1zC4RGE2id46cyK_Y93JigTDcVR6dXLLHWTZ9iF7gw8izdnc4zIpNkG4Zv6Du6mn6GKaE_thfx6oFWHgJb9k20WQS7tHQLpcgkQbUt3Y2JIHc4_Z0kp4KmuPHcvw_TNKU3"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container text-[12px] font-label font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">music_note</span>
+            Needs Audio Sync (Sitar Lo-Fi)
+          </div>
+</div>
+<!-- Meta info -->
+<div class="text-[13px] font-label text-on-surface-variant flex items-center justify-between pt-1">
+<span class="flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-xs text-on-surface-variant" style="font-size:12px">phone_iphone</span>
+            Updated yesterday • Mobile Draft
+          </span>
+<span class="font-mono text-[12px] text-secondary">#DOCU-019</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-3 border-t-0 flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-1">
+<button class="flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-xs font-label font-semibold flex-1">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">edit</span>
+            Resume Editing
+          </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors text-xs font-label font-semibold" title="Translate dialect">
+<span class="material-symbols-outlined text-sm text-tertiary" style="font-size:14px">translate</span>
+</button>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Options">
+<span class="material-symbols-outlined text-base" style="font-size:16px">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Draft Card 4 -->
+<div class="draft-card cursor-pointer group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-4 relative overflow-hidden" data-id="DHAN-014">
+<div class="space-y-3">
+<!-- Badges & Status -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-secondary-container text-on-secondary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">view_carousel</span>
+              Carousel Deck
+            </span>
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-surface-container-high text-on-surface">
+              शुद्ध हिन्दी
+            </span>
+</div>
+<span class="flex items-center gap-1 text-[13px] font-label font-semibold text-secondary bg-surface-container px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            In Progress
+          </span>
+</div>
+<!-- Title -->
+<h3 class="text-xl font-headline font-semibold text-on-surface leading-snug group-hover:text-primary transition-colors">
+          Dhanteras Gold &amp; Brass Utensils Buying Guide
+        </h3>
+<!-- Regional Hook Block -->
+<div class="p-3.5 rounded-xl bg-surface-container-low text-on-surface space-y-1.5">
+<span class="text-[12px] uppercase font-label tracking-widest text-on-surface-variant font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">auto_stories</span>
+            Slide 1 Primary Headline
+          </span>
+<p class="font-headline italic text-sm text-on-surface leading-relaxed">
+            "धनतेरस पर पीतल और तांबे के बर्तनों का शुभ मुहूर्त एवं प्रामाणिक परम्परा: जानिए सही धातु की पहचान कैसे करें।"
+          </p>
+</div>
+<!-- Carousel Slide Previews (Miniature Multi-slide Representation) -->
+<div class="grid grid-cols-4 gap-1.5 pt-1">
+<div class="h-14 rounded-lg bg-surface-container-high flex flex-col items-center justify-center p-1 text-[12px] font-mono text-on-surface-variant font-bold">
+            01 Cover
+          </div>
+<div class="h-14 rounded-lg bg-surface-container-high flex flex-col items-center justify-center p-1 text-[12px] font-mono text-on-surface-variant font-bold">
+            02 Muhurat
+          </div>
+<div class="h-14 rounded-lg bg-surface-container-high flex flex-col items-center justify-center p-1 text-[12px] font-mono text-on-surface-variant font-bold">
+            03 Brass
+          </div>
+<div class="h-14 rounded-lg bg-primary-fixed flex flex-col items-center justify-center p-1 text-[12px] font-mono text-on-primary-fixed font-bold">
+            +3 more
+          </div>
+</div>
+<!-- Meta info -->
+<div class="text-[13px] font-label text-on-surface-variant flex items-center justify-between pt-1">
+<span class="flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-xs text-on-surface-variant" style="font-size:12px">schedule</span>
+            Updated 2 days ago
+          </span>
+<span class="font-mono text-[12px] text-secondary">6 Slides drafted</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-3 border-t-0 flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-1">
+<button class="flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-xs font-label font-semibold flex-1">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">slideshow</span>
+            Preview Slides
+          </button>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Options">
+<span class="material-symbols-outlined text-base" style="font-size:16px">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Draft Card 5 -->
+<div class="draft-card cursor-pointer group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-4 relative overflow-hidden" data-id="BHAI-008">
+<div class="space-y-3">
+<!-- Badges & Status -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-primary-fixed text-on-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">campaign</span>
+              Omnichannel Post
+            </span>
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-surface-container-high text-on-surface">
+              Hinglish
+            </span>
+</div>
+<span class="flex items-center gap-1 text-[13px] font-label font-semibold text-primary bg-primary-fixed/40 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Ready for Review
+          </span>
+</div>
+<!-- Title -->
+<h3 class="text-xl font-headline font-semibold text-on-surface leading-snug group-hover:text-primary transition-colors">
+          Bhai Dooj Gifting Sweet Box Launch
+        </h3>
+<!-- Regional Hook Block -->
+<div class="p-3.5 rounded-xl bg-surface-container-low text-on-surface space-y-1.5">
+<span class="text-[12px] uppercase font-label tracking-widest text-on-surface-variant font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">celebration</span>
+            Captivating Tagline
+          </span>
+<p class="font-headline italic text-sm text-on-surface leading-relaxed">
+            "Bhai-Dooj ki mithaas, shuddh A2 ghee aur desi kaju katli ke saath. Mumbai express delivery open now!"
+          </p>
+</div>
+<!-- Channel Badges -->
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container text-xs font-label">
+<span class="text-[13px] text-on-surface-variant font-semibold">Channels:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-semibold text-[13px]">Instagram Feed</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-semibold text-[13px]">WhatsApp VIP</span>
+</div>
+<!-- Meta info -->
+<div class="text-[13px] font-label text-on-surface-variant flex items-center justify-between pt-1">
+<span class="flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-xs text-on-surface-variant" style="font-size:12px">history</span>
+            Updated 3 days ago
+          </span>
+<span class="font-mono text-[12px] text-secondary">#BHAI-008</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-3 border-t-0 flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-1">
+<button class="flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg bg-primary text-on-primary text-xs font-label font-semibold hover:bg-primary-container transition-all flex-1 shadow-xs">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">edit_note</span>
+            Edit in Studio
+          </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors text-xs font-label font-semibold" title="Schedule">
+<span class="material-symbols-outlined text-sm" style="font-size:14px">schedule_send</span>
+</button>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Options">
+<span class="material-symbols-outlined text-base" style="font-size:16px">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Draft Card 6 -->
+<div class="draft-card cursor-pointer group bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between space-y-4 relative overflow-hidden" data-id="BREW-031">
+<div class="space-y-3">
+<!-- Badges & Status -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-primary-fixed text-on-primary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">local_cafe</span>
+              Recipe Reel
+            </span>
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-surface-container-high text-on-surface">
+              English &amp; தமிழ்
+            </span>
+</div>
+<span class="flex items-center gap-1 text-[13px] font-label font-semibold text-tertiary bg-tertiary-fixed px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Needs Polish
+          </span>
+</div>
+<!-- Title -->
+<h3 class="text-xl font-headline font-semibold text-on-surface leading-snug group-hover:text-primary transition-colors">
+          Morning Filter Coffee Brewing Masterclass Reel
+        </h3>
+<!-- Regional Hook Block -->
+<div class="p-3.5 rounded-xl bg-surface-container-low text-on-surface space-y-1.5">
+<span class="text-[12px] uppercase font-label tracking-widest text-on-surface-variant font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">lightbulb</span>
+            Audience Retention Hook
+          </span>
+<p class="font-headline italic text-sm text-on-surface leading-relaxed">
+            "The 80:20 chicory ratio secret that traditional Mylapore filter coffee lovers swear by..."
+          </p>
+</div>
+<!-- Audio & Dialect Diagnostic Note -->
+<div class="p-3 rounded-xl bg-surface-container flex items-center justify-between text-xs font-label">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-tertiary" style="font-size:14px">record_voice_over</span>
+<span class="text-on-surface">Tamil VO Script</span>
+</div>
+<span class="text-tertiary font-semibold text-[13px]">Dialect tone 72%</span>
+</div>
+<!-- Meta info -->
+<div class="text-[13px] font-label text-on-surface-variant flex items-center justify-between pt-1">
+<span class="flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-xs text-on-surface-variant" style="font-size:12px">schedule</span>
+            Updated 4 days ago
+          </span>
+<span class="font-mono text-[12px] text-secondary">#BREW-031</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-3 border-t-0 flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-1">
+<button class="flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-xs font-label font-semibold flex-1">
+<span class="material-symbols-outlined text-xs" style="font-size:12px">tune</span>
+            Polish Script
+          </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors text-xs font-label font-semibold" title="Translate dialect">
+<span class="material-symbols-outlined text-sm text-primary" style="font-size:14px">translate</span>
+</button>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Options">
+<span class="material-symbols-outlined text-base" style="font-size:16px">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Regional Creator Footnote & Sovereign Storage Status -->
+<div class="p-5 rounded-2xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-xl" style="font-size:20px">encrypted</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-label font-bold text-on-surface">Local Draft Storage</span>
+<span class="text-[13px] text-on-surface-variant font-body">Your saved content is stored in this local workspace database.</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="text-[13px] font-mono text-secondary">Local workspace</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-xs font-label font-semibold text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1" id="refreshDrafts">
+<span class="material-symbols-outlined text-sm" style="font-size:14px">cloud_sync</span>
+        Refresh Drafts
+      </button>
+</div>
+</div>
+</div>
+<!-- Slide-Out Preview Drawer Overlay (Interactive Drawer) -->
+<div class="fixed inset-0 bg-on-surface/40 backdrop-blur-xs z-50 transition-opacity duration-300 opacity-0 pointer-events-none" id="drawerBackdrop"></div>
+<aside class="fixed top-0 right-0 h-full w-full max-w-xl bg-surface-container-lowest z-50 shadow-2xl flex flex-col justify-between transition-transform duration-300 ease-in-out translate-x-full overflow-y-auto" id="previewDrawer">
+<!-- Drawer Header -->
+<div class="sticky top-0 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container px-6 py-4 flex items-center justify-between z-10">
+<div class="flex items-center gap-2">
+<span class="p-1.5 rounded-md bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-sm" style="font-size:14px">wysiwyg</span>
+</span>
+<div class="flex flex-col">
+<span class="text-xs font-label font-bold uppercase tracking-wider text-primary">Draft Inspector</span>
+<span class="text-[13px] font-mono text-on-surface-variant" id="drawerArtifactId">Artifact #NAV-2024</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-xs font-label font-semibold transition-colors" id="copyScriptBtn" title="Copy Full Script">
+<span class="material-symbols-outlined text-sm" style="font-size:14px">content_copy</span>
+<span>Copy Script</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="closeDrawerBtn" title="Close Drawer">
+<span class="material-symbols-outlined text-xl" style="font-size:20px">close</span>
+</button>
+</div>
+</div>
+<!-- Drawer Body -->
+<div class="p-6 space-y-6 flex-1">
+<!-- Title & Badges Section -->
+<div class="space-y-2.5">
+<div class="flex items-center gap-2 flex-wrap">
+<span id="drawerStatusBadge" class="px-2.5 py-0.5 rounded-full text-[13px] font-label font-semibold bg-primary text-on-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-surface"></span>
+          Ready for Review
+        </span>
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-primary-fixed text-on-primary-fixed" id="drawerPlatformBadge">
+          Reel Script (9:16)
+        </span>
+<span class="px-2 py-0.5 rounded text-[13px] font-label font-medium bg-secondary-container text-on-secondary-container" id="drawerLanguageBadge">
+          हिन्दी + বাংলা Mix
+        </span>
+</div>
+<h2 class="text-2xl font-headline font-semibold text-on-surface leading-snug" id="drawerTitle">
+        Navratri Special Handloom Saree Showcase
+      </h2>
+<div class="flex items-center gap-4 text-xs font-label text-on-surface-variant pt-1 border-t border-surface-container">
+<span class="flex items-center gap-1" id="drawerWordCount">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">timer</span>
+          ~35 seconds
+        </span>
+<span class="flex items-center gap-1" id="drawerLanguage">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">translate</span>
+          140 words
+        </span>
+<span class="flex items-center gap-1" id="drawerUpdated">
+<span class="material-symbols-outlined text-xs text-secondary" style="font-size:12px">update</span>
+          Synced 12 mins ago
+        </span>
+</div>
+</div>
+<!-- Media Thumbnail Preview -->
+<div class="relative w-full h-48 rounded-xl overflow-hidden bg-surface-container shadow-inner">
+<img alt="Draft Visual asset" class="w-full h-full object-cover" id="drawerImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrpkqJOOZSQzEwP3jcP9W-IrHIXDKO5xdkujHNHhtUekKq-0OT5ua-c6qs0Du2txGuUYWikwILyGA5WHbbJa2oib-gUolEkYLbY6wHVAzgDRQGLA_U4Fy8BnN7Fcev1yupaPfKc59GgtJF3RcCFGgHXiFICdiboX_JASfcKZHLHq1XL55JAJL_dL3JI7b6kGXzSun_vHOHEWaIBk01NvqiRTVYkex25AuBE2ja5_ab"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/70 via-transparent to-transparent flex items-end p-4 justify-between">
+<span class="text-xs font-label font-bold text-inverse-on-surface bg-inverse-surface/60 px-2 py-0.5 rounded backdrop-blur-sm">
+          Cover Keyframe: 00:03.5s
+        </span>
+<button class="px-2.5 py-1 rounded bg-surface/90 text-on-surface text-xs font-label font-semibold flex items-center gap-1 shadow hover:bg-surface transition-colors">
+<span class="material-symbols-outlined text-sm" style="font-size:14px">swap_horiz</span> Replace Media
+        </button>
+</div>
+</div>
+<!-- Cultural Hook Section -->
+<div class="p-4 rounded-xl bg-surface-container-low space-y-2 border-l-4 border-primary">
+<div class="flex items-center justify-between">
+<span class="text-[12px] uppercase font-label tracking-widest text-on-surface-variant font-bold flex items-center gap-1" id="drawerContentLabel">
+<span class="material-symbols-outlined text-xs text-primary" style="font-size:12px">lightbulb</span>
+          Saved Content
+        </span>
+<span class="text-[12px] font-label font-bold text-primary">From your workspace</span>
+</div>
+<p class="font-headline italic text-base text-on-surface leading-relaxed" id="drawerHookText">
+        "इस नवरात्रि, अपनी परंपरा को पहनें ✨ Authentic handwoven Chanderi with pure Zari work crafted for Durga Puja pandals."
+      </p>
+</div>
+<div id="drawerCaptionBlock" class="hidden p-4 rounded-xl bg-surface-container space-y-3">
+<div id="drawerCaption" class="text-sm text-on-surface leading-relaxed"></div>
+<div id="drawerHashtags" class="flex flex-wrap gap-1.5 text-xs text-primary"></div>
+</div>
+<!-- Optional script preview -->
+<div id="drawerScriptSection" class="hidden p-4 rounded-xl bg-surface-container">
+<h4 class="text-xs font-label font-bold uppercase tracking-wider text-on-surface-variant">Video Script</h4>
+<p id="drawerScriptText" class="mt-2 text-sm text-on-surface leading-relaxed"></p>
+</div>
+<!-- Optional campaign context -->
+<div id="drawerTagsSection" class="hidden space-y-2">
+<span class="text-[12px] uppercase font-label tracking-widest text-on-surface-variant font-bold">Dialect &amp; Regional Cultural Context</span>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2.5 py-1 rounded-md text-[13px] font-label font-semibold bg-surface-container text-on-surface">#DurgaPujaFashion</span>
+<span class="px-2.5 py-1 rounded-md text-[13px] font-label font-semibold bg-surface-container text-on-surface">#NavratriChanderi</span>
+<span class="px-2.5 py-1 rounded-md text-[13px] font-label font-semibold bg-surface-container text-on-surface">Tone: Festive Reverence</span>
+<span class="px-2.5 py-1 rounded-md text-[13px] font-label font-semibold bg-primary-fixed text-on-primary-fixed">Kolkata + Mumbai Geo-targeted</span>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="sticky bottom-0 bg-surface-container-lowest/95 backdrop-blur-md border-t border-surface-container p-5 flex items-center justify-between gap-3 z-10">
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-xs font-label font-semibold transition-colors" id="duplicateBtn">
+<span class="material-symbols-outlined text-sm" style="font-size:14px">content_copy</span>
+<span>Duplicate</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-xs font-label font-semibold transition-colors" id="closeDrawerFooterBtn">
+        Close Drawer
+      </button>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container text-xs font-label font-semibold transition-all shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-size:14px">bolt</span>
+<span>Open in AI Studio</span>
+</button>
+</div>
+</div>
+</aside>
+</main></div>
+<script src="/stitch/wire.js?v=20261115-routing-session-fix-3" defer></script>
+<script src="/stitch/drafts.js" defer></script>
+</body></html>

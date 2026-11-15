@@ -1,0 +1,427 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-size:18px;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface-variant":"#605850","primary-fixed":"#fbe8d8","on-secondary":"#ffffff","surface":"#faf5ee","on-secondary-fixed":"#2a2420","surface-tint":"#c2652a","primary-container":"#e08850","on-error":"#ffffff","secondary-container":"#eae2da","error-container":"#fce4e0","surface-container-high":"#ece6dc","on-primary":"#ffffff","on-background":"#3a302a","on-primary-container":"#fbe8d8","primary-fixed-dim":"#f0a878","on-surface":"#3a302a","on-tertiary-container":"#3a2020","tertiary-fixed-dim":"#e8a0a0","on-tertiary":"#ffffff","secondary":"#78706a","outline-variant":"#d8d0c8","surface-bright":"#faf5ee","on-secondary-fixed-variant":"#504840","on-secondary-container":"#605850","surface-container":"#f2ece4","surface-container-highest":"#e6e0d6","inverse-surface":"#3a302a","surface-container-low":"#f6f0e8","secondary-fixed":"#eae2da","surface-container-lowest":"#ffffff","tertiary-container":"#d47070","outline":"#9a9088","secondary-fixed-dim":"#cec6be","tertiary":"#8c3c3c","inverse-primary":"#f0a878","on-tertiary-fixed":"#2e1515","tertiary-fixed":"#fce0e0","background":"#faf5ee","on-tertiary-fixed-variant":"#6e3030","primary":"#c2652a","surface-variant":"#ece6dc","surface-dim":"#dcd6cc","on-error-container":"#7a1a10","on-primary-fixed-variant":"#8a4518","inverse-on-surface":"#faf5ee","error":"#c0392b","on-primary-fixed":"#401a08"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{},fontFamily:{headline:["EB Garamond"],display:["EB Garamond"],body:["Manrope"],label:["Manrope"]},fontSize:{
+  "xs":["0.875rem",{"lineHeight":"1rem"}],
+  "sm":["1rem",{"lineHeight":"1.25rem"}],
+  "base":["1.125rem",{"lineHeight":"1.5rem"}],
+  "lg":["1.25rem",{"lineHeight":"1.75rem"}],
+  "xl":["1.375rem",{"lineHeight":"1.75rem"}],
+  "2xl":["1.625rem",{"lineHeight":"2rem"}],
+  "3xl":["2rem",{"lineHeight":"2.25rem"}],
+  "4xl":["2.375rem",{"lineHeight":"2.5rem"}],
+  "5xl":["3.125rem",{"lineHeight":"1"}],
+  "6xl":["3.875rem",{"lineHeight":"1"}],
+  "7xl":["4.625rem",{"lineHeight":"1"}],
+  "8xl":["6.125rem",{"lineHeight":"1"}],
+  "9xl":["8.125rem",{"lineHeight":"1"}]
+}}}}</script></head><body class="bg-surface font-body text-on-surface min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_2px_16px_rgba(58,48,42,0.04)]"><div class="flex flex-col p-5"><div class="flex items-center gap-3 pb-4"><div aria-label="Bhasha Bloom logo" class="h-12 w-12 shrink-0 rounded-2xl bg-primary flex items-center justify-center shadow-md ring-1 ring-primary/10">
+  <span class="material-symbols-outlined text-on-primary" style="font-size:28px;font-variation-settings:'FILL' 1">local_florist</span>
+</div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="text-[21px] font-headline font-bold tracking-tight text-on-surface leading-none">Bhasha Bloom</span></div><span class="text-[13px] text-on-surface-variant font-label tracking-wide">Regional Creators Suite</span></div></div><div class="mb-5"><div class="flex items-center justify-between w-full px-3 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-left cursor-pointer hover:bg-surface-container-low transition-colors shadow-xs"><div class="flex items-center gap-2.5 min-w-0 overflow-hidden"><span class="material-symbols-outlined rounded-lg bg-primary-fixed p-2 text-primary" style="font-size:16px">storefront</span><span data-workspace-name class="text-sm font-label font-bold text-on-surface truncate" title="Your business">Your business</span></div><span class="material-symbols-outlined text-sm text-on-surface-variant" style="font-size:14px">unfold_more</span></div></div><nav class="space-y-1.5"><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-label text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="/dashboard" target="_top"><span class="material-symbols-outlined text-base" style="font-size:16px">bar_chart</span><span class="">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-label bg-primary text-on-primary font-semibold shadow-xs" data-path="create" href="/studio" target="_top"><span class="material-symbols-outlined text-base" style="font-size:16px">auto_awesome</span><span class="">Create</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-label text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="drafts" href="/drafts" target="_top"><span class="material-symbols-outlined text-base" style="font-size:16px">edit_note</span><span class="">Drafts</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-label text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="brand-profile" href="/dashboard" target="_top"><span class="material-symbols-outlined text-base" style="font-size:16px">loyalty</span><span class="">Brand Profile</span></a></nav></div><div class="p-5 space-y-3"><div class="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-surface-container transition-colors cursor-pointer"><div class="flex items-center gap-3"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj1KXK1aoRHzgRXwSdKDRr9V0wi2c5p5vRhxwGd0kSVVygRwSdUHbP9Dyu8P9kJDP4fORBppHCoUd0kXawjmPxuiMihpjsAFlK2XqxfXGHwXKIkZod7FljH7MQzAEOI2SCwZoBWgHDxPDhu-dEwdDM-zcp6Jjt6ek9GID_64M23cct3__8oO26I8iJlsJ8iQLLyfar6t9x92v7OsYOZ1ayBiJ7Hw7uSv6iMWqEpXM1"><div class="flex flex-col min-w-0"><span class="text-xs font-label font-semibold text-on-surface truncate">Pooja Sharma</span><span class="text-[13px] text-on-surface-variant font-label truncate">Founder &amp; Creator</span></div></div><a class="text-on-surface-variant hover:text-on-surface" href="#" title="Settings"><span class="material-symbols-outlined text-base" style="font-size:16px">settings</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_2px_16px_rgba(58,48,42,0.04)] z-40 flex items-center justify-between px-8"><div class="relative w-96"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-sm text-outline" style="font-size:14px">search</span><input class="w-full bg-surface-container-lowest text-xs text-on-surface placeholder:text-outline rounded-lg pl-9 pr-14 py-2 outline-none focus:ring-1 focus:ring-primary shadow-xs font-label" placeholder="Search drafts, hooks, reels scripts, tags..." type="text"><kbd class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[12px] font-mono text-outline bg-surface-container px-1.5 py-0.5 rounded">⌘K</kbd></div><div class="flex items-center gap-4"><button id="create-notifications-button" aria-haspopup="dialog" aria-expanded="false" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-xl" style="font-size:20px">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-tertiary"></span></button><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary text-on-primary text-xs font-label font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all shadow-[0_2px_16px_rgba(58,48,42,0.04)]"><span class="material-symbols-outlined text-sm" style="font-size:14px">add</span><span class="">+ New Campaign</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj1KXK1aoRHzgRXwSdKDRr9V0wi2c5p5vRhxwGd0kSVVygRwSdUHbP9Dyu8P9kJDP4fORBppHCoUd0kXawjmPxuiMihpjsAFlK2XqxfXGHwXKIkZod7FljH7MQzAEOI2SCwZoBWgHDxPDhu-dEwdDM-zcp6Jjt6ek9GID_64M23cct3__8oO26I8iJlsJ8iQLLyfar6t9x92v7OsYOZ1ayBiJ7Hw7uSv6iMWqEpXM1"></div></header><main class="relative pt-16 w-full min-h-screen px-8 py-8 bg-surface"><div class="flex flex-col w-full space-y-6"><!-- Header Breadcrumb & Subtitle -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-2">
+  <div>
+    <div class="flex items-center gap-2 text-xs font-label text-on-surface-variant mb-1">
+      <span class="">Workspace</span>
+      <span class="text-outline-variant font-mono">/</span>
+      <span class="">Bhasha Bloom</span>
+      <span class="text-outline-variant font-mono">/</span>
+      <span class="text-primary font-semibold">Create</span>
+    </div>
+    <div class="flex flex-col gap-1">
+      <h1 class="text-3xl lg:text-4xl font-headline font-semibold text-on-surface tracking-tight">AI Studio: Create Workspace</h1>
+      <p class="text-xs text-on-surface-variant font-label">Turn your product or story idea into ready-to-publish regional content</p>
+    </div>
+  </div>
+</div>
+
+<!-- Workspace Grid: 60/40 Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+  <!-- LEFT PANEL: Input & Customization Configuration (Col 7) -->
+  <div class="lg:col-span-7 flex flex-col space-y-5">
+    <!-- Idea Input Container -->
+    <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4 relative overflow-hidden">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-xl" style="font-size:20px">edit_square</span>
+          <label class="text-base font-label font-bold text-on-surface" for="creativePrompt">What do you want to create?</label>
+        </div>
+      </div>
+      <div class="relative">
+        <textarea class="w-full bg-surface-container-low rounded-xl p-4 text-xs lg:text-sm font-body text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary/40 resize-none transition-all shadow-inner leading-relaxed" id="creativePrompt" placeholder="e.g. Promote a local Kolkata cafe's nolen gur brownies. Give two distinct hooks and a warm caption inviting people to ask the cafe for details." rows="4"></textarea>
+      </div>
+
+      <!-- Cultural Fast-Track Ideas (locked until after 50% submission) -->
+      <div class="space-y-2 pt-1">
+        <div class="flex items-center gap-2">
+          <span class="text-[13px] font-label font-semibold uppercase tracking-wider text-on-surface-variant">Cultural Fast-Track Ideas</span>
+          <span class="inline-flex items-center rounded-full bg-primary-fixed px-2 py-0.5 text-[11px] font-label font-bold tracking-wider text-primary">UPCOMING</span>
+        </div>
+        <div class="flex flex-wrap gap-2" id="promptStarters">
+          <button class="template-pill cursor-not-allowed px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant/70 text-xs font-label font-medium transition-all flex items-center gap-1.5 shadow-xs opacity-75" type="button" disabled aria-disabled="true" title="Available after the 50% submission">
+            <span>🪔 Festive Discount</span>
+            <span class="material-symbols-outlined text-[14px]" style="font-size:14px">lock</span>
+          </button>
+          <button class="template-pill cursor-not-allowed px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant/70 text-xs font-label font-medium transition-all flex items-center gap-1.5 shadow-xs opacity-75" type="button" disabled aria-disabled="true" title="Available after the 50% submission">
+            <span>☕ Behind the Scenes</span>
+            <span class="material-symbols-outlined text-[14px]" style="font-size:14px">lock</span>
+          </button>
+          <button class="template-pill cursor-not-allowed px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant/70 text-xs font-label font-medium transition-all flex items-center gap-1.5 shadow-xs opacity-75" type="button" disabled aria-disabled="true" title="Available after the 50% submission">
+            <span>⭐ Customer Story</span>
+            <span class="material-symbols-outlined text-[14px]" style="font-size:14px">lock</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Essential Core Choices -->
+    <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-size:18px">checklist</span><h2 class="text-sm font-label font-bold uppercase tracking-wider text-on-surface">Essential Choices</h2></div>
+      
+      <!-- Language -->
+      <div class="space-y-2">
+        <label class="text-xs font-label font-semibold text-on-surface flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-primary text-base" style="font-size:16px">translate</span>
+          Language
+        </label>
+        <div class="grid grid-cols-3 gap-2.5">
+          <label class="cursor-pointer">
+            <input checked="" class="peer sr-only" name="core_lang" type="radio" value="english">
+            <div class="peer-checked:bg-primary peer-checked:text-on-primary bg-surface-container-low text-on-surface rounded-xl p-3 flex flex-col items-center justify-center text-center transition-all hover:bg-surface-container shadow-xs">
+              <span class="text-xs font-bold font-headline">Indian English</span>
+              <span class="text-[12px] font-label opacity-80 mt-0.5">Metropolitan</span>
+            </div>
+          </label>
+          <label class="cursor-not-allowed opacity-75" aria-label="Hindi — upcoming">
+            <input class="peer sr-only" disabled name="core_lang" type="radio" value="hindi">
+            <div class="bg-surface-container-low text-on-surface rounded-xl p-3 flex flex-col items-center justify-center text-center shadow-xs cursor-not-allowed">
+              <span class="text-xs font-bold font-headline">हिन्दी</span>
+              <span class="text-[12px] font-label opacity-80 mt-0.5 inline-flex items-center gap-1">Hindi <span class="px-1.5 py-0.5 rounded-full bg-surface-container text-[10px] font-label font-bold tracking-widest text-on-surface-variant">UPCOMING</span></span>
+            </div>
+          </label>
+          <label class="cursor-not-allowed opacity-75" aria-label="Bengali — upcoming">
+            <input class="peer sr-only" disabled name="core_lang" type="radio" value="bengali">
+            <div class="bg-surface-container-low text-on-surface rounded-xl p-3 flex flex-col items-center justify-center text-center shadow-xs cursor-not-allowed">
+              <span class="text-xs font-bold font-headline">বাংলা</span>
+              <span class="text-[12px] font-label opacity-80 mt-0.5 inline-flex items-center gap-1">Bengali <span class="px-1.5 py-0.5 rounded-full bg-surface-container text-[10px] font-label font-bold tracking-widest text-on-surface-variant">UPCOMING</span></span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Platform & Tone in 2 Cols -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+        <!-- Platform -->
+        <div class="space-y-2">
+          <label class="text-xs font-label font-semibold text-on-surface flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-primary text-base" style="font-size:16px">cell_tower</span>
+            Platform
+          </label>
+          <div class="flex flex-col gap-2">
+            <label class="cursor-pointer">
+              <input checked="" class="peer sr-only" name="core_platform" type="radio" value="ig">
+              <div class="peer-checked:bg-primary peer-checked:text-on-primary bg-surface-container-low text-on-surface rounded-lg px-3 py-2 text-xs font-label font-medium flex items-center gap-2 transition-all hover:bg-surface-container shadow-xs">
+                <span class="material-symbols-outlined text-sm" style="font-size:14px">photo_camera</span>
+                <span class="">Instagram Reel / Post</span>
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input class="peer sr-only" name="core_platform" type="radio" value="yt">
+              <div class="peer-checked:bg-primary peer-checked:text-on-primary bg-surface-container-low text-on-surface rounded-lg px-3 py-2 text-xs font-label font-medium flex items-center gap-2 transition-all hover:bg-surface-container shadow-xs">
+                <span class="material-symbols-outlined text-sm" style="font-size:14px">smart_display</span>
+                <span class="">YouTube Shorts</span>
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input class="peer sr-only" name="core_platform" type="radio" value="fb">
+              <div class="peer-checked:bg-primary peer-checked:text-on-primary bg-surface-container-low text-on-surface rounded-lg px-3 py-2 text-xs font-label font-medium flex items-center gap-2 transition-all hover:bg-surface-container shadow-xs">
+                <span class="material-symbols-outlined text-sm" style="font-size:14px">public</span>
+                <span class="">Facebook Reels</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Tone -->
+        <div class="space-y-2">
+          <label class="text-xs font-label font-semibold text-on-surface flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-primary text-base" style="font-size:16px">psychology</span>
+            Tone
+          </label>
+          <div class="relative">
+            <select id="toneSelect" class="w-full appearance-none bg-surface-container-low text-on-surface font-label text-xs font-medium rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/40 cursor-pointer shadow-xs">
+              <option value="Warm &amp; Hospitable">Warm &amp; Hospitable</option>
+              <option value="Enthusiastic / Festive">Enthusiastic / Festive</option>
+              <option value="Storytelling / Craft">Storytelling / Craft</option>
+            </select>
+            <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-base" style="font-size:16px">expand_more</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Key Facts & Photo (Optional) -->
+    <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-lg" style="font-size:18px">fact_check</span>
+        <h2 class="text-sm font-label font-bold uppercase tracking-wider text-on-surface">Add Key Facts &amp; Photo (Optional)</h2>
+      </div>
+
+      <div class="space-y-3">
+        <div>
+          <label class="text-xs font-label font-medium text-on-surface-variant block mb-1">Key facts or product details to include</label>
+          <input class="w-full bg-surface-container-low text-xs font-body text-on-surface placeholder:text-outline/70 rounded-xl px-3.5 py-2.5 outline-none focus:ring-1 focus:ring-primary shadow-xs" id="businessDetailsInput" placeholder="e.g. Product: nolen gur brownies; location: Kolkata. No confirmed price, ingredients, discount, or availability." type="text">
+        </div>
+
+        <div>
+          <label for="businessPhotoInput" class="text-xs font-label font-medium text-on-surface-variant block mb-1">Upload reference photo (optional)</label>
+          <input id="businessPhotoInput" class="hidden" type="file" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" aria-label="Choose a business photo">
+          <div class="border-0 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-3 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3 text-left min-w-0">
+              <div class="w-9 h-9 shrink-0 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-lg" style="font-size:18px" aria-hidden="true">add_photo_alternate</span>
+              </div>
+              <div class="min-w-0">
+                <p class="text-xs font-label font-semibold text-on-surface">Upload a photo regarding/about your business</p>
+                <p class="text-[11px] font-body text-on-surface-variant">JPG, PNG or WebP · up to 2 MB</p>
+              </div>
+            </div>
+            <button id="businessPhotoBrowse" type="button" class="shrink-0 text-xs font-label text-primary font-semibold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">Browse</button>
+          </div>
+          <div id="businessPhotoPreview" class="hidden mt-3 rounded-xl bg-surface-container-low p-3 items-center gap-3" aria-live="polite">
+            <img id="businessPhotoThumbnail" class="w-12 h-12 rounded-lg object-cover bg-surface-container" alt="Selected business photo preview">
+            <div class="min-w-0 flex-1">
+              <p id="businessPhotoFilename" class="text-xs font-label font-semibold text-on-surface truncate"></p>
+              <p class="text-[11px] font-body text-on-surface-variant">Ready to include with your next generation</p>
+            </div>
+            <button id="businessPhotoRemove" type="button" class="shrink-0 text-xs font-label text-primary font-semibold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary">Remove</button>
+          </div>
+          <p id="businessPhotoStatus" class="mt-2 text-[11px] font-body text-on-surface-variant" role="status" aria-live="polite">The photo is sent for this generation only and is not saved with drafts.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- More Options & Advanced Settings (Collapsible / Drawer) -->
+    <details class="group bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
+      <summary class="cursor-pointer p-5 flex items-center justify-between text-xs font-label font-bold text-on-surface hover:bg-surface-container-low transition-colors select-none">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-lg" style="font-size:18px">tune</span>
+          <span class="">More options &amp; advanced settings</span>
+        </div>
+        <span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span>
+      </summary>
+      <div class="p-5 pt-0 space-y-4 border-0 divide-y divide-surface-container text-xs font-label">
+        <!-- Voice Note Trigger -->
+        <div class="pt-3 flex items-center justify-between">
+          <div class="flex flex-col">
+            <span class="font-semibold text-on-surface">Voice note input</span>
+            <span class="text-[13px] text-on-surface-variant">Dictate your brief in any regional language</span>
+          </div>
+          <button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-medium text-xs">
+            <span class="material-symbols-outlined text-sm text-primary" style="font-size:14px">mic</span>
+            <span class="">Record voice note brief</span>
+          </button>
+        </div>
+
+        <!-- Bilingual transliteration toggle -->
+        
+
+        <!-- Extra Channels -->
+        <div class="pt-3 space-y-2">
+          <span class="font-semibold text-on-surface block">Extra channels</span>
+          <div class="flex flex-wrap gap-2">
+            <label class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors text-xs text-on-surface">
+              <input class="rounded text-primary" type="checkbox">
+              <span class="">WhatsApp Store broadcast</span>
+            </label>
+            
+          </div>
+        </div>
+
+        <!-- Background Music Choices -->
+        <div class="pt-3 space-y-1.5">
+          <span class="font-semibold text-on-surface block">Background audio mood</span>
+          <select class="w-full appearance-none bg-surface-container-low text-on-surface font-label text-xs rounded-xl px-3.5 py-2 outline-none cursor-pointer shadow-xs">
+            <option>Carnatic flute / Lo-Fi</option>
+            <option>Upbeat Dholak &amp; Festive rhythm</option>
+            <option>Gentle acoustic guitar</option>
+          </select>
+        </div>
+
+        <!-- Asset scan / OCR note -->
+        <div class="pt-3 flex items-center justify-between text-on-surface-variant">
+          <span class="text-[13px]">Example / Coming soon: OCR &amp; asset scan for menu badges</span>
+          <span class="text-[12px] bg-surface-container px-2 py-0.5 rounded font-mono">Preview</span>
+        </div>
+      </div>
+    </details>
+
+  </div>
+
+  <!-- RIGHT PANEL: Results Panel (Col 5) -->
+  <div class="lg:col-span-5 flex flex-col space-y-5">
+    <!-- Top Result Header -->
+    <div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span id="generatedStatusIcon" class="material-symbols-outlined text-primary text-xl" style="font-size:20px">auto_awesome</span>
+        <h2 class="text-sm font-label font-bold text-on-surface">Generated Content</h2>
+      </div>
+      <button id="generateBtn" data-state="idle" aria-live="polite" class="inline-flex min-w-[14rem] justify-center items-center gap-2 rounded-xl bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container px-7 py-3 text-base font-label font-bold shadow-xs transition-all"><span class="material-symbols-outlined" style="font-size:20px">auto_awesome</span><span>Generate Content</span></button>
+    </div>
+
+    <!-- Section 1: Hooks -->
+    <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4"><div class="flex items-center justify-between gap-3"><div class="flex items-center gap-2 flex-1"><span class="material-symbols-outlined text-primary text-lg" style="font-size:18px">trending_up</span><div class="relative flex-1 max-w-xs"><select id="contentSectionSelect" onchange="switchContentSection(this.value)" class="w-full appearance-none bg-surface-container-low text-on-surface font-label text-xs font-bold uppercase tracking-wider rounded-xl px-3 py-2 pr-8 focus:outline-none focus:ring-2 focus:ring-primary/40 cursor-pointer shadow-xs border-0"><option value="hooks" selected="">Hooks (English)</option><option value="story">Story and Craft</option><option value="offer">Offer and CTA</option></select><span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-base" style="font-size:16px">expand_more</span></div></div><div class="text-[13px] font-label font-medium text-on-surface-variant hidden sm:block">2 Variations</div></div><div id="section-hooks" class="space-y-3"><div class="p-3.5 bg-surface-container-low rounded-xl space-y-2"><div class="flex items-center justify-between"><span class="text-[13px] font-label font-semibold text-primary">Hook Option #1</span><div class="flex items-center gap-1.5"><button class="copy-btn px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">content_copy</span><span class="">Copy</span></button><button class="px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">bookmark_border</span><span class="">Save to Drafts</span></button></div></div><p class="text-sm font-headline font-semibold text-on-surface leading-snug" data-generated-content style="min-height:2.8em"></p><p class="text-[13px] font-body text-on-surface-variant italic" aria-hidden="true" style="min-height:2.3em"></p></div><div class="p-3.5 bg-surface-container-low rounded-xl space-y-2"><div class="flex items-center justify-between"><span class="text-[13px] font-label font-semibold text-primary">Hook Option #2</span><div class="flex items-center gap-1.5"><button class="copy-btn px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">content_copy</span><span class="">Copy</span></button><button class="px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">bookmark_border</span><span class="">Save to Drafts</span></button></div></div><p class="text-sm font-headline font-medium text-on-surface leading-snug" data-generated-content style="min-height:2.8em"></p><p class="text-[13px] font-body text-on-surface-variant italic" aria-hidden="true" style="min-height:2.3em"></p></div></div><div id="section-story" class="space-y-3 hidden"><div class="p-3.5 bg-surface-container-low rounded-xl space-y-2"><div class="flex items-center justify-between"><span class="text-[13px] font-label font-semibold text-primary">Story &amp; Craft #1</span><div class="flex items-center gap-1.5"><button class="copy-btn px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">content_copy</span><span class="">Copy</span></button><button class="px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">bookmark_border</span><span class="">Save to Drafts</span></button></div></div><p class="text-sm font-headline font-semibold text-on-surface leading-relaxed" data-generated-content style="min-height:6.5em"></p><p class="text-[13px] font-body text-on-surface-variant italic" aria-hidden="true" style="min-height:2.3em"></p></div><div class="p-3.5 bg-surface-container-low rounded-xl space-y-2"><div class="flex items-center justify-between"><span class="text-[13px] font-label font-semibold text-primary">Story &amp; Craft #2</span><div class="flex items-center gap-1.5"><button class="copy-btn px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">content_copy</span><span class="">Copy</span></button><button class="px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">bookmark_border</span><span class="">Save to Drafts</span></button></div></div><p class="text-sm font-headline font-medium text-on-surface leading-relaxed" data-generated-content style="min-height:6.5em"></p><p class="text-[13px] font-body text-on-surface-variant italic" aria-hidden="true" style="min-height:2.3em"></p></div></div><div id="section-offer" class="space-y-3 hidden"><div class="p-3.5 bg-surface-container-low rounded-xl space-y-2"><div class="flex items-center justify-between"><span class="text-[13px] font-label font-semibold text-primary">Offer &amp; CTA #1</span><div class="flex items-center gap-1.5"><button class="copy-btn px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">content_copy</span><span class="">Copy</span></button><button class="px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">bookmark_border</span><span class="">Save to Drafts</span></button></div></div><p class="text-sm font-headline font-semibold text-on-surface leading-snug" data-generated-content style="min-height:2.8em"></p><p class="text-[13px] font-body text-on-surface-variant italic" aria-hidden="true" style="min-height:2.3em"></p></div><div class="p-3.5 bg-surface-container-low rounded-xl space-y-2"><div class="flex items-center justify-between"><span class="text-[13px] font-label font-semibold text-primary">Offer &amp; CTA #2</span><div class="flex items-center gap-1.5"><button class="copy-btn px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">content_copy</span><span class="">Copy</span></button><button class="px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container-lowest text-on-surface hover:text-primary shadow-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs" style="font-size:12px">bookmark_border</span><span class="">Save to Drafts</span></button></div></div><p class="text-sm font-headline font-medium text-on-surface leading-snug" data-generated-content style="min-height:2.8em"></p><p class="text-[13px] font-body text-on-surface-variant italic" aria-hidden="true" style="min-height:2.3em"></p></div></div><script>function switchContentSection(val){['hooks','story','offer'].forEach(function(s){var el=document.getElementById('section-'+s);if(el){if(s===val){el.classList.remove('hidden');}else{el.classList.add('hidden');}}});}</script></div>
+
+    <!-- Section 2: Caption & Hashtags -->
+    <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-lg" style="font-size:18px">tag</span>
+          <h3 class="text-xs font-label font-bold uppercase tracking-wider text-on-surface">Caption &amp; Hashtags</h3>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <button class="copy-btn px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container text-on-surface hover:text-primary transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs" style="font-size:12px">content_copy</span>
+            <span class="">Copy Caption</span>
+          </button>
+          <button class="px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container text-on-surface hover:text-primary transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs" style="font-size:12px">bookmark_border</span>
+            <span class="">Save to Drafts</span>
+          </button>
+        </div>
+      </div>
+      <div class="p-4 bg-surface-container-low rounded-xl space-y-3 font-body text-xs leading-relaxed text-on-surface">
+        <p id="generated-caption" style="min-height:7.5em"></p>
+        <div id="generated-hashtags" class="flex flex-wrap gap-1.5 pt-1" style="min-height:22px"></div>
+      </div>
+    </div>
+
+    <!-- Section 3: 30s Video Script -->
+    <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-lg" style="font-size:18px">movie_edit</span>
+          <h3 class="text-xs font-label font-bold uppercase tracking-wider text-on-surface">30s Video Script</h3>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <button class="copy-btn px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container text-on-surface hover:text-primary transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs" style="font-size:12px">content_copy</span>
+            <span class="">Copy Script</span>
+          </button>
+          <button class="px-2.5 py-1 rounded-lg text-[12px] font-label font-semibold bg-surface-container text-on-surface hover:text-primary transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs" style="font-size:12px">bookmark_border</span>
+            <span class="">Save to Drafts</span>
+          </button>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-xs bg-surface-container-low">
+        <table class="w-full text-left text-xs font-label">
+          <thead class="bg-surface-container text-[13px] font-bold text-on-surface uppercase tracking-wider">
+            <tr>
+              <th class="py-2.5 px-3.5 w-5/12">Visual Shot</th>
+              <th class="py-2.5 px-3.5 w-7/12">Audio &amp; Voiceover</th>
+            </tr>
+          </thead>
+          <tbody id="generated-video-script" class="divide-y divide-surface-container text-on-surface font-body text-[13px] leading-relaxed"><tr>
+            <td class="py-3 px-3.5 align-top"><div aria-hidden="true" style="height:92px"></div></td>
+            <td class="py-3 px-3.5 align-top"><div aria-hidden="true" style="height:92px"></div></td>
+          </tr><tr>
+            <td class="py-3 px-3.5 align-top"><div aria-hidden="true" style="height:92px"></div></td>
+            <td class="py-3 px-3.5 align-top"><div aria-hidden="true" style="height:92px"></div></td>
+          </tr><tr>
+            <td class="py-3 px-3.5 align-top"><div aria-hidden="true" style="height:92px"></div></td>
+            <td class="py-3 px-3.5 align-top"><div aria-hidden="true" style="height:92px"></div></td>
+          </tr></tbody>
+        </table>
+      </div>
+    </div>
+
+
+  </div>
+</div></div>
+<!-- Interactive Client-side Script -->
+<script>
+  // Template pill selection insertion
+  document.querySelectorAll('.template-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      const promptArea = document.getElementById('creativePrompt');
+      const text = pill.innerText.trim();
+      promptArea.value = `Create an Indic vernacular campaign for: ${text}. Focus on regional storytelling, festival discounts, and local authenticity.`;
+      showToast(`Applied starter: ${text.split(' ')[1] || text}`);
+    });
+  });
+
+  // Copy buttons
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const content = btn.getAttribute('data-copy') || 'Copied text from Bhasha Bloom';
+      navigator.clipboard.writeText(content).then(() => {
+        showToast('Text copied to clipboard!');
+      }).catch(() => {
+        showToast('Copied successfully!');
+      });
+    });
+  });
+
+  // Platform chips toggle
+  document.querySelectorAll('#platformChips button').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const active = chip.getAttribute('data-active') === 'true';
+      if (active) {
+        chip.setAttribute('data-active', 'false');
+        chip.classList.remove('bg-primary', 'text-on-primary');
+        chip.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      } else {
+        chip.setAttribute('data-active', 'true');
+        chip.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        chip.classList.add('bg-primary', 'text-on-primary');
+      }
+    });
+  });
+
+  // Generate Button Animation Simulation
+  const generateBtn = document.getElementById('generateBtn');
+  if (generateBtn) {
+    generateBtn.addEventListener('click', () => {
+      generateBtn.classList.add('scale-95');
+      setTimeout(() => generateBtn.classList.remove('scale-95'), 150);
+      showToast('Generating personalized Indic scripts & hooks...');
+    });
+  }
+
+  // Keyboard Shortcut: Cmd/Ctrl + Enter to trigger generate
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+      if (generateBtn) generateBtn.click();
+    }
+  });
+
+  // Output Tabs Switching
+  document.querySelectorAll('.tab-btn').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(t => {
+        t.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+        t.classList.add('bg-transparent', 'text-on-surface-variant', 'font-medium');
+      });
+      tab.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+      tab.classList.remove('bg-transparent', 'text-on-surface-variant');
+      showToast(`Switched view to ${tab.innerText}`);
+    });
+  });
+
+  // Simple Toast Helper
+  function showToast(msg) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    if (!toast || !toastMsg) return;
+    toastMsg.innerText = msg;
+    toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+    }, 2400);
+  }
+</script></main></div>
+
+
+
+<script src="/stitch/wire.js?v=20261115-routing-session-fix-3" defer></script></body></html>
